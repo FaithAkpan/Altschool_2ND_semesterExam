@@ -17,7 +17,9 @@ function SearchComponent(props) {
         <input
           type="text"
           id="search-bar"
-          onChange={(e) => {setSearchQuery(e.target.value), props.onSearch(e.target.value)}}
+          onChange={(e) => {
+            setSearchQuery(e.target.value), props.onSearch(e.target.value);
+          }}
           placeholder="Type Here..."
         />
         <button className="search-btn" type="submit" onClick={handleSearch}>
@@ -89,11 +91,13 @@ const RepositoriesPage = () => {
       {myRepositories?.length ? (
         <>
           {myRepositories.map((repo) => {
-            return <RepoCard repo={repo} key={repo.id}/>;
+            return <RepoCard repo={repo} key={repo.id} />;
           })}
         </>
       ) : (
-        <><p>No data found</p></>
+        <>
+          {/* <NotFoundPage/>  */}
+        </>
       )}
     </section>
   );

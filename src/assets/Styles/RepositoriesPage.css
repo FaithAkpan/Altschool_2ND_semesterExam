@@ -1,6 +1,8 @@
 .main-page{
   max-width: 800px;
   margin: 0px auto;
+
+  
 }
 
 
@@ -51,6 +53,7 @@ input{
   max-width: 400px;
   margin: 50px;
   box-shadow: #f0f0f0;
+ 
 }
 .card-name, p{
   padding: 0px;
@@ -73,3 +76,26 @@ a{
   padding-top: 10px;
 
 }
+@media  (max-width: 768px){
+  .main-page{display: flex;
+  flex-direction: column;}
+  .repo-card{
+    max-width: 300px;
+  }
+  .card-name{
+    width: fit-content;
+  }
+  #search-bar {
+  
+    width: 500px;
+  }
+  .search-bar{
+    max-width: 400px;
+  }
+  .search-btn{
+    top: 80px;
+    right: 40px;
+  }
+ 
+}
+

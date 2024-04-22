@@ -2,6 +2,7 @@ import React from "react";
 import "../assets/Styles/ErrorBoundary.css";
 import { Link } from "react-router-dom";
 
+
 const ErrorBoundary = () => {
   return (
     <div className="error">
